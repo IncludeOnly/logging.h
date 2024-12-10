@@ -72,6 +72,7 @@ LOGAPI void logging_log(log_level_t log_level, char* format, ...);
     do { \
         if (!(expr)) { \
             LOG(stderr, "ERRO", "Assertion failed for (%s): " fmt, #expr, ##__VA_ARGS__); \
+            exit(1); \
         } \
     } while (0)
 
