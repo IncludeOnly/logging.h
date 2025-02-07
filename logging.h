@@ -13,7 +13,7 @@
 #define LOGGING_VERSION "0.0.1"
 
 #ifndef LOGAPI
-    #define LOGAPI static
+    #define LOGAPI extern
 #endif // LOGAPI
 
 #define HANDLE_ERROR(msg) \
